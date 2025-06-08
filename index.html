@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Super Trunfo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+    <body>
+  <h1>Super Trunfo</h1>
+  <div id="placar">Você: 0 | CPU: 0 | Rodada: 1/5</div>
+
+  <div class="cartas">
+    <div class="carta">
+      <h2>Sua Carta</h2>
+      <div id="carta-jogador"></div>
+    </div>
+    <div class="carta">
+      <h2>Carta da CPU</h2>
+      <div id="carta-cpu"></div>
+    </div>
+  </div>
+
+  <div id="atributos">
+    <h3>Escolha um atributo:</h3>
+    <button onclick="jogar('velocidade')">Velocidade</button>
+    <button onclick="jogar('potencia')">Potência</button>
+    <button onclick="jogar('peso')">Peso</button>
+  </div>
+
+  <pre id="resultado"></pre>
+  <button id="reiniciar" onclick="reiniciarJogo()" style="display: none;">Jogar Novamente</button>
+
+  <script src="script.js"></script>
+    </body>
+</html>
